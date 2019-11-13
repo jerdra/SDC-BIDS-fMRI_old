@@ -26,7 +26,7 @@ else
         cat download_list | head -3 | \
           xargs -I '{}' aws s3 sync --no-sign-request \
           s3://openneuro/ds000030/ds000030_R1.0.5/uncompressed/derivatives/fmriprep/{}/anat \
-          ./data/ds000030/derivatives/fmriprep/{}/anat --exclude "*" --include "*preproc.nii.gz"
+          ./data/ds000030/derivatives/fmriprep/{}/anat --exclude "*" --include "*preproc.nii.gz" --include "*mask.nii.gz"
 
         # download fmriprep preprocessed func data
         cat download_list | head -3 | \
@@ -39,7 +39,7 @@ else
 	cat download_list | \
 	  xargs -I '{}' aws s3 sync --no-sign-request \
 	  s3://openneuro/ds000030/ds000030_R1.0.5/uncompressed/derivatives/fmriprep/{}/anat \
-	  ./data/ds000030/derivatives/fmriprep/{}/anat --exclude "*" --include "*preproc.nii.gz"
+	  ./data/ds000030/derivatives/fmriprep/{}/anat --exclude "*" --include "*preproc.nii.gz" --include "*mask.nii.gz"
 
 	# download fmriprep preprocessed func data
 	cat download_list | \
