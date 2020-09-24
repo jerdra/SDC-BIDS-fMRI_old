@@ -1,3 +1,9 @@
+This repository is now deprecated, please see:
+
+https://github.com/carpentries-incubator/SDC-BIDS-fMRI
+
+For the most up to date content regarding this course
+
 # Scientific Computing Working Group Workshop on performing analysis of neuroimaging data in Python
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jerdra/SDC-BIDS-fMRI/master)
